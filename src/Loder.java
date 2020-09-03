@@ -5,8 +5,7 @@ public class Loder {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         int a = 10;
-        System.out.print("a = ");
-        System.out.println(a);
+        System.out.println("a = "+a);
         System.out.println(a++);
         System.out.println(++a);
         System.out.println("–––––––––––––––––––");
