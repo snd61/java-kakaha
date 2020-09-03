@@ -46,17 +46,6 @@ public class Loder {
                 }
             }
         }
-        System.out.println(Arrays.toString(arr2));
-        System.out.println("–––––");
-        Random m = new Random();
-        int mmas[]= new int[n];
-        System.out.println("Случайный массив=");
-        for (int i=0;i<n;i++){
-            arr2[i] = m.nextInt(101);
-            System.out.println( arr2[i]);
-        }
-        Arrays.sort(arr2);
-        System.out.println("Отсортированный массив ="+ Arrays.toString(arr2));
-
+        System.out.println("–––––––––––––––––––");
     }
 }
