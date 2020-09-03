@@ -30,8 +30,22 @@ public class Loder {
         }
         System.out.println("–––––––––––––––––––"); // 1 1/2 1/3 1/4
         System.out.println("Сгенерировать массив случайных целых чисел, вывести, отсортировать и вывести");
-        int n = 10;
-        int[]arr2 = new int[n];
+        int n = 5;
+        double[]arr2 = new double[n];
+        for (int i = 0; i < n; ++i) {
+            arr2[i] = Math.random() * 100;
+        }
+        System.out.println(Arrays.toString(arr2));
+        System.out.println("–––––");
+        for (int i = 0; i < n - 1; ++i) {
+            if (arr2[i] < arr2[i+1]) {
+                double tmp = arr2[i];
+                arr2[i] = arr2[i+1];
+                arr2[i+1] = tmp;
+            }
+        }
+        System.out.println(Arrays.toString(arr2));
+        System.out.println("–––––");
         Random m = new Random();
         int mmas[]= new int[n];
         System.out.println("Случайный массив=");
