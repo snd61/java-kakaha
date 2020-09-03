@@ -37,11 +37,13 @@ public class Loder {
         }
         System.out.println(Arrays.toString(arr2));
         System.out.println("–––––");
-        for (int i = 0; i < n - 1; ++i) {
-            if (arr2[i] < arr2[i+1]) {
-                double tmp = arr2[i];
-                arr2[i] = arr2[i+1];
-                arr2[i+1] = tmp;
+        for (int k = 0; k < n - 1; ++k) {
+            for (int i = 0; i < n - 1; ++i) {
+                if (arr2[i] < arr2[i + 1]) {
+                    double tmp = arr2[i];
+                    arr2[i] = arr2[i + 1];
+                    arr2[i + 1] = tmp;
+                }
             }
         }
         System.out.println(Arrays.toString(arr2));
