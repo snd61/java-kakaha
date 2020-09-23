@@ -3,17 +3,26 @@ import java.util.Random;
 
 public class Loder {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        int a = 10;
-        System.out.println("a = "+a);
-        System.out.println(a++);
-        System.out.println(++a);
+        System.out.println("[practice1]");
         System.out.println("–––––––––––––––––––");
         int[]arr = {10, 10, 10, 10, 10, 10,10,10,10,10}; // int[]arr = new int[10];
         int sum = 0;
         for (int i = 0; i < 10; ++i) {
             sum += arr[i];
         }
+        System.out.println(sum);
+        sum = 0;
+        int j = 10;
+        while (j != 0) {
+            sum += arr[j - 1];
+            --j;
+        }
+        System.out.println(sum);
+        sum = 0; j = 0;
+        do {
+            sum += arr[j];
+            ++j;
+        } while (j < 10);
         System.out.println(sum);
         System.out.println("–––––––––––––––––––");
         System.out.println("Первые 10 цифр гармонического ряда");
@@ -45,6 +54,7 @@ public class Loder {
                 }
             }
         }
+        System.out.println(Arrays.toString(arr2));
         System.out.println("–––––––––––––––––––");
     }
 }
