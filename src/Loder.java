@@ -1,11 +1,8 @@
 import java.util.Arrays;
-import java.util.Random;
 
 public class Loder {
     public static void main(String[] args) {
-        System.out.println("[practice1]");
-        System.out.println("–––––––––––––––––––");
-        int[]arr = {10, 10, 10, 10, 10, 10,10,10,10,10}; // int[]arr = new int[10];
+        int[]arr = {11,11,11,11,11,11,11,11,11,11}; // int[]arr = new int[10];
         int sum = 0;
         for (int i = 0; i < 10; ++i) {
             sum += arr[i];
